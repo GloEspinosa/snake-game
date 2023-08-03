@@ -1,0 +1,37 @@
+INHERITANCE
+
+class Animal:
+    def __init__(self):
+        self.eyes = 2
+
+    def breathe(self):
+        print("Inhale, exhale.")
+
+class Fish(Animal):
+    def __init__(self):
+        super().__init__()
+
+    def breathe(self):
+        super().breathe()
+        print("Bubbles underwater.")
+
+    def swim(self):
+        print("Moving in water.")
+
+nemo = Fish()
+nemo.breathe()
+nemo.swim()
+
+SLICING
+
+piano_keys = [a, b, c, d, e, f, g]
+# from position 2 to position 5 = c, d, e
+print(piano_keys[2:5])
+# piano_keys[2:]
+# piano_keys[:5]
+print(piano_keys[2:5:2])
+print(piano_keys[::2])
+# piano_keys[::-1]
+
+
+
